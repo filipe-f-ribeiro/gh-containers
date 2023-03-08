@@ -12,9 +12,6 @@ jobs:
   test:
     environment: testing
     runs-on: ubuntu-latest
-    container:
-      image: node:16
-      # env: not needed to this container
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb #mongodb+srv
       MONGODB_CLUSTER_ADDRESS: 127.0.0.1:27017 # local IP + mongodb default port
